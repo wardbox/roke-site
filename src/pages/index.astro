@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import { Icon } from 'astro-icon/components'
 ---
 
 <html lang="en">
@@ -11,26 +12,25 @@ import '../styles/global.css'
     <title>Roke - A Wasp Starter with Sensible Defaults</title>
     <meta name="description" content="A full-stack Wasp starter template with authentication, Stripe payments, shadcn/ui components, and Motion animations." />
   </head>
-  <body class="bg-background text-foreground min-h-screen">
+  <body class="bg-background text-foreground min-h-screen antialiased">
     <main class="mx-auto max-w-4xl px-6 py-16 lg:py-24">
       <!-- Hero -->
       <section class="mb-20 lg:mb-28">
-        <h1 class="text-5xl font-bold tracking-tight lg:text-7xl mb-4">
+        <p class="text-primary font-medium mb-4 tracking-wide text-sm uppercase">Wasp Starter Template</p>
+        <h1 class="text-5xl font-bold tracking-tight lg:text-7xl mb-6">
           Roke
         </h1>
-        <p class="text-xl lg:text-2xl text-muted mb-8 max-w-2xl">
-          A Wasp starter with sensible defaults. Authentication, payments, UI components, and animations — ready to go.
+        <p class="text-xl lg:text-2xl text-muted mb-10 max-w-2xl leading-relaxed">
+          A Wasp starter with sensible defaults. Auth, payments, UI, and animations. Ready to ship.
         </p>
         <div class="flex flex-wrap gap-4">
           <a
             href="https://github.com/wardbox/roke"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+            class="inline-flex items-center gap-2 bg-primary text-background px-6 py-3 rounded-lg font-medium hover:bg-primary-light transition-colors"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
+            <Icon name="ph:github-logo" class="w-5 h-5" />
             Use This Template
           </a>
           <a
@@ -47,37 +47,49 @@ import '../styles/global.css'
       <!-- What's Included -->
       <section class="mb-20 lg:mb-28">
         <h2 class="text-2xl font-semibold mb-8">What's Included</h2>
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="border border-border rounded-lg p-6">
-            <div class="text-primary text-2xl mb-3">🔐</div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="https://github.com/wardbox/roke/blob/main/src/auth/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
+            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <Icon name="ph:lock-key" class="w-5 h-5 text-primary" />
+            </div>
             <h3 class="font-semibold mb-2">Authentication</h3>
-            <p class="text-muted text-sm">Email/password auth with verification and password reset flows.</p>
-          </div>
-          <div class="border border-border rounded-lg p-6">
-            <div class="text-primary text-2xl mb-3">💳</div>
+            <p class="text-muted text-sm">Email/password. Verification. Password reset.</p>
+          </a>
+          <a href="https://github.com/wardbox/roke/blob/main/src/payment/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
+            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <Icon name="ph:credit-card" class="w-5 h-5 text-primary" />
+            </div>
             <h3 class="font-semibold mb-2">Stripe Payments</h3>
-            <p class="text-muted text-sm">Subscription billing with checkout and customer portal.</p>
-          </div>
-          <div class="border border-border rounded-lg p-6">
-            <div class="text-primary text-2xl mb-3">🎨</div>
+            <p class="text-muted text-sm">Subscriptions, checkout, customer portal.</p>
+          </a>
+          <a href="https://github.com/wardbox/roke/blob/main/src/components/ui/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
+            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <Icon name="ph:layout" class="w-5 h-5 text-primary" />
+            </div>
             <h3 class="font-semibold mb-2">shadcn/ui</h3>
-            <p class="text-muted text-sm">Beautiful, accessible components built with Tailwind CSS.</p>
-          </div>
-          <div class="border border-border rounded-lg p-6">
-            <div class="text-primary text-2xl mb-3">✨</div>
-            <h3 class="font-semibold mb-2">Motion Animations</h3>
-            <p class="text-muted text-sm">Spring-based animations with snappy, bouncy, and heavy presets.</p>
-          </div>
-          <div class="border border-border rounded-lg p-6">
-            <div class="text-primary text-2xl mb-3">🌙</div>
+            <p class="text-muted text-sm">Accessible components built on Tailwind.</p>
+          </a>
+          <a href="https://github.com/wardbox/roke/blob/main/src/motion/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
+            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <Icon name="ph:sparkle" class="w-5 h-5 text-primary" />
+            </div>
+            <h3 class="font-semibold mb-2">Motion</h3>
+            <p class="text-muted text-sm">Spring presets: snappy, bouncy, heavy.</p>
+          </a>
+          <a href="https://github.com/wardbox/roke/blob/main/src/root/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
+            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <Icon name="ph:moon" class="w-5 h-5 text-primary" />
+            </div>
             <h3 class="font-semibold mb-2">Dark Mode</h3>
-            <p class="text-muted text-sm">Theme toggle with system preference support.</p>
-          </div>
-          <div class="border border-border rounded-lg p-6">
-            <div class="text-primary text-2xl mb-3">📘</div>
+            <p class="text-muted text-sm">System preference detection. Manual toggle.</p>
+          </a>
+          <a href="https://github.com/wardbox/roke/blob/main/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
+            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+              <Icon name="ph:file-ts" class="w-5 h-5 text-primary" />
+            </div>
             <h3 class="font-semibold mb-2">TypeScript</h3>
-            <p class="text-muted text-sm">Full type safety throughout the entire stack.</p>
-          </div>
+            <p class="text-muted text-sm">End-to-end type safety.</p>
+          </a>
         </div>
       </section>
 
@@ -95,12 +107,31 @@ import '../styles/global.css'
         </div>
       </section>
 
+      <!-- Tech Logos -->
+      <section class="mb-16">
+        <p class="text-muted text-sm text-center mb-6">powered by</p>
+        <div class="flex items-center justify-center gap-8 flex-wrap">
+          <a href="https://wasp-lang.dev" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
+            <img src="/logos/wasp.png" alt="Wasp" class="h-8" />
+          </a>
+          <a href="https://motion.dev" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
+            <img src="/logos/motion.png" alt="Motion" class="h-8" />
+          </a>
+          <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
+            <img src="/logos/tailwind.svg" alt="Tailwind CSS" class="h-6" />
+          </a>
+          <a href="https://ui.shadcn.com" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
+            <img src="/logos/shadcnui.png" alt="shadcn/ui" class="h-8" />
+          </a>
+        </div>
+      </section>
+
       <!-- Footer -->
       <footer class="border-t border-border pt-8 text-center text-muted text-sm">
         <p>
-          Built with <a href="https://wasp-lang.dev" class="text-primary hover:underline">Wasp</a> ·
-          <a href="https://github.com/wardbox/roke" class="text-primary hover:underline">GitHub</a> ·
-          <a href="https://twitter.com/ward_box" class="text-primary hover:underline">@ward_box</a>
+          <a href="https://github.com/wardbox/roke" class="hover:text-foreground transition-colors">GitHub</a> ·
+          <a href="https://dylankappler.com" class="hover:text-foreground transition-colors">dylankappler.com</a> ·
+          <a href="https://twitter.com/ward_box" class="hover:text-foreground transition-colors">@ward_box</a>
         </p>
       </footer>
     </main>

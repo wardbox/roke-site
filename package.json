@@ -9,8 +9,14 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.16.5",
+    "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@iconify-json/ph": "^1.2.2"
   }
 }
