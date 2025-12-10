@@ -28,9 +28,6 @@ jobs:
           cache: pnpm
       - run: pnpm install
       - run: pnpm build
-        env:
-          SITE: https://${{ github.repository_owner }}.github.io
-          BASE: /${{ github.event.repository.name }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
