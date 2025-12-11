@@ -29,8 +29,8 @@ jobs:
       - run: pnpm install
       - run: pnpm build
         env:
-          SITE: https://wardbox.github.io
-          BASE: /roke-site/
+          SITE: https://roke.dev
+          BASE: /
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
