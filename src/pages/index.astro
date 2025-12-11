@@ -1,8 +1,8 @@
 ---
-import '../styles/global.css'
-import { Icon } from 'astro-icon/components'
+import "../styles/global.css";
+import { Icon } from "astro-icon/components";
 
-const base = import.meta.env.BASE_URL
+const base = import.meta.env.BASE_URL;
 ---
 
 <html lang="en">
@@ -12,18 +12,26 @@ const base = import.meta.env.BASE_URL
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Roke - A Wasp Starter with Sensible Defaults</title>
-    <meta name="description" content="A full-stack Wasp starter template with authentication, Stripe payments, shadcn/ui components, and Motion animations." />
+    <meta
+      name="description"
+      content="A full-stack Wasp starter template with authentication, Stripe payments, shadcn/ui components, and Motion animations."
+    />
   </head>
   <body class="bg-background text-foreground min-h-screen antialiased">
     <main class="mx-auto max-w-4xl px-6 py-16 lg:py-24">
       <!-- Hero -->
       <section class="mb-20 lg:mb-28">
-        <p class="text-primary font-medium mb-4 tracking-wide text-sm uppercase">Wasp Starter Template</p>
-        <h1 class="text-5xl font-bold tracking-tight lg:text-7xl mb-6">
-          Roke
-        </h1>
-        <p class="text-xl lg:text-2xl text-muted mb-10 max-w-2xl leading-relaxed">
-          A Wasp starter with sensible defaults. Auth, payments, UI, and animations. Ready to ship.
+        <p
+          class="text-primary font-medium mb-4 tracking-wide text-sm uppercase"
+        >
+          Wasp Starter Template
+        </p>
+        <h1 class="text-5xl font-bold tracking-tight lg:text-7xl mb-6">Roke</h1>
+        <p
+          class="text-xl lg:text-2xl text-muted mb-10 max-w-2xl leading-relaxed"
+        >
+          A Wasp starter with sensible defaults. Auth, payments, UI, and
+          animations. Ready to ship.
         </p>
         <div class="flex flex-wrap gap-4">
           <a
@@ -50,43 +58,95 @@ const base = import.meta.env.BASE_URL
       <section class="mb-20 lg:mb-28">
         <h2 class="text-2xl font-semibold mb-8">What's Included</h2>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <a href="https://github.com/wardbox/roke/blob/main/src/auth/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+          <a
+            href="https://github.com/wardbox/roke/blob/main/src/auth/CLAUDE.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4"
+            >
               <Icon name="ph:lock-key" class="w-5 h-5 text-primary" />
             </div>
             <h3 class="font-semibold mb-2">Authentication</h3>
-            <p class="text-muted text-sm">Email/password. Verification. Password reset.</p>
+            <p class="text-muted text-sm">
+              Email/password. Verification. Password reset.
+            </p>
           </a>
-          <a href="https://github.com/wardbox/roke/blob/main/src/payment/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+          <a
+            href="https://github.com/wardbox/roke/blob/main/src/payment/CLAUDE.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4"
+            >
               <Icon name="ph:credit-card" class="w-5 h-5 text-primary" />
             </div>
             <h3 class="font-semibold mb-2">Stripe Payments</h3>
-            <p class="text-muted text-sm">Subscriptions, checkout, customer portal.</p>
+            <p class="text-muted text-sm">
+              Subscriptions, checkout, customer portal.
+            </p>
           </a>
-          <a href="https://github.com/wardbox/roke/blob/main/src/components/ui/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+          <a
+            href="https://github.com/wardbox/roke/blob/main/src/components/ui/CLAUDE.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4"
+            >
               <Icon name="ph:layout" class="w-5 h-5 text-primary" />
             </div>
             <h3 class="font-semibold mb-2">shadcn/ui</h3>
-            <p class="text-muted text-sm">Accessible components built on Tailwind.</p>
+            <p class="text-muted text-sm">
+              Accessible components built on Tailwind.
+            </p>
           </a>
-          <a href="https://github.com/wardbox/roke/blob/main/src/motion/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+          <a
+            href="https://github.com/wardbox/roke/blob/main/src/motion/CLAUDE.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4"
+            >
               <Icon name="ph:sparkle" class="w-5 h-5 text-primary" />
             </div>
             <h3 class="font-semibold mb-2">Motion</h3>
-            <p class="text-muted text-sm">Spring presets: snappy, bouncy, heavy.</p>
+            <p class="text-muted text-sm">
+              Spring presets: snappy, bouncy, heavy.
+            </p>
           </a>
-          <a href="https://github.com/wardbox/roke/blob/main/src/root/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+          <a
+            href="https://github.com/wardbox/roke/blob/main/src/root/CLAUDE.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4"
+            >
               <Icon name="ph:moon" class="w-5 h-5 text-primary" />
             </div>
             <h3 class="font-semibold mb-2">Dark Mode</h3>
-            <p class="text-muted text-sm">System preference detection. Manual toggle.</p>
+            <p class="text-muted text-sm">
+              System preference detection. Manual toggle.
+            </p>
           </a>
-          <a href="https://github.com/wardbox/roke/blob/main/CLAUDE.md" target="_blank" rel="noopener noreferrer" class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+          <a
+            href="https://github.com/wardbox/roke/blob/main/CLAUDE.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group border border-border rounded-lg p-6 hover:border-primary/50 transition-colors"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4"
+            >
               <Icon name="ph:file-ts" class="w-5 h-5 text-primary" />
             </div>
             <h3 class="font-semibold mb-2">TypeScript</h3>
@@ -98,9 +158,13 @@ const base = import.meta.env.BASE_URL
       <!-- Quick Start -->
       <section class="mb-20 lg:mb-28">
         <h2 class="text-2xl font-semibold mb-8">Quick Start</h2>
-        <div class="bg-border/30 rounded-lg p-6 font-mono text-sm overflow-x-auto">
+        <div
+          class="bg-border/30 rounded-lg p-6 font-mono text-sm overflow-x-auto"
+        >
           <div class="text-muted mb-2"># Clone the template</div>
-          <div class="mb-4">gh repo create my-app --template wardbox/roke --clone</div>
+          <div class="mb-4">
+            gh repo create my-app --template wardbox/roke --clone
+          </div>
           <div class="text-muted mb-2"># Start the database and dev server</div>
           <div>cd my-app</div>
           <div>wasp db start</div>
@@ -113,27 +177,66 @@ const base = import.meta.env.BASE_URL
       <section class="mb-16">
         <p class="text-muted text-sm text-center mb-6">powered by</p>
         <div class="flex items-center justify-center gap-8 flex-wrap">
-          <a href="https://wasp.sh" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
+          <a
+            href="https://wasp.sh"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="opacity-60 hover:opacity-100 transition-opacity"
+          >
             <img src={`${base}logos/wasp.png`} alt="Wasp" class="h-8" />
           </a>
-          <a href="https://motion.dev" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
+          <a
+            href="https://motion.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="opacity-60 hover:opacity-100 transition-opacity"
+          >
             <img src={`${base}logos/motion.png`} alt="Motion" class="h-8" />
           </a>
-          <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
-            <img src={`${base}logos/tailwind.svg`} alt="Tailwind CSS" class="h-6" />
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="opacity-60 hover:opacity-100 transition-opacity"
+          >
+            <img
+              src={`${base}logos/tailwind.svg`}
+              alt="Tailwind CSS"
+              class="h-6"
+            />
           </a>
-          <a href="https://ui.shadcn.com" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
-            <img src={`${base}logos/shadcnui.png`} alt="shadcn/ui" class="h-8" />
+          <a
+            href="https://ui.shadcn.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="opacity-60 hover:opacity-100 transition-opacity"
+          >
+            <img
+              src={`${base}logos/shadcnui.png`}
+              alt="shadcn/ui"
+              class="h-8"
+            />
           </a>
         </div>
       </section>
 
       <!-- Footer -->
-      <footer class="border-t border-border pt-8 text-center text-muted text-sm">
+      <footer
+        class="border-t border-border pt-8 text-center text-muted text-sm"
+      >
         <p>
-          <a href="https://github.com/wardbox/roke" class="hover:text-foreground transition-colors">GitHub</a> ·
-          <a href="https://dylankappler.com" class="hover:text-foreground transition-colors">dylankappler.com</a> ·
-          <a href="https://twitter.com/ward_box" class="hover:text-foreground transition-colors">@ward_box</a>
+          <a
+            href="https://github.com/wardbox/roke"
+            class="hover:text-foreground transition-colors">GitHub</a
+          > ·
+          <a
+            href="https://dylankappler.com"
+            class="hover:text-foreground transition-colors">dylankappler.com</a
+          > ·
+          <a
+            href="https://twitter.com/ward_box"
+            class="hover:text-foreground transition-colors">@ward_box</a
+          >
         </p>
       </footer>
     </main>
